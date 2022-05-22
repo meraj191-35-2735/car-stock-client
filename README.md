@@ -1,6 +1,6 @@
 # Car Stock
 
-## Live Site Link [Click Here](https://car-stock-meraj.herokuapp.com/)
+## Live Site Link [Click Here](https://car-stock-meraj.web.app/)
 
 ## Features:
 
