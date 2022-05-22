@@ -1,0 +1,8 @@
+.productForm {
+  background-color: rgba(64, 173, 64, 0.418);
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  box-shadow: 0px 0px 10px 0px;
+}
