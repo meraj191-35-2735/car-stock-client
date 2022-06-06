@@ -31,7 +31,7 @@ const ManageInventory = () => {
         Manage Inventory
       </h3>
       <div className="text-end mt-3">
-        <Link to="/add_product" className="btn btn-success fw-bold ps-5 pe-5">
+        <Link to="/add_product" className="btn btn-dark fw-bold ps-5 pe-5">
           Add Product
         </Link>
       </div>

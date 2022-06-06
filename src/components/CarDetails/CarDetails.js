@@ -68,7 +68,7 @@ const CarDetails = () => {
           placeholder="Enter Quantity"
         />
         <input
-          className="btn btn-success fw-bold ps-5 pe-5 ms-3"
+          className="btn btn-dark fw-bold ps-5 pe-5 ms-3"
           type="submit"
           value="Restock"
         />
@@ -87,12 +87,12 @@ const CarDetails = () => {
             </div>
           </div>
           <div className="d-flex justify-content-between">
-            <Button onClick={handleNavigateCheckout} variant="primary">
+            <Button onClick={handleNavigateCheckout} variant="dark">
               Checkout
             </Button>
             <Button
               onClick={() => handleNavigateDeliver(findCar)}
-              variant="primary"
+              variant="dark"
             >
               Delivered
             </Button>

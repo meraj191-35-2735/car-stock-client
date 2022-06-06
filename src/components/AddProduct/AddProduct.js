@@ -55,7 +55,7 @@ const AddProduct = () => {
           type="text"
           {...register("img")}
         />
-        <input type="submit" value="Add Service" />
+        <input type="submit" className="btn btn-dark" value="Add Service" />
       </form>
     </div>
   );

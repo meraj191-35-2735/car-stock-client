@@ -97,7 +97,7 @@ const Login = () => {
         </p>
 
         <div className="d-flex justify-content-center">
-          <Button className="btn-lg" variant="primary" type="submit">
+          <Button className="btn-lg" variant="dark" type="submit">
             Log In
           </Button>
         </div>

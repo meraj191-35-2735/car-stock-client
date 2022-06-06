@@ -10,7 +10,7 @@ const Car = ({ car }) => {
   };
   return (
     <div className="col-4">
-      <Card>
+      <Card style={{ backgroundColor: "#f5f5f5" }}>
         <Card.Img variant="top" src={image} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
@@ -23,7 +23,7 @@ const Car = ({ car }) => {
               <p>Quantity: {quantity}</p>
             </div>
           </div>
-          <Button variant="primary" onClick={handleUpdate}>
+          <Button variant="dark" onClick={handleUpdate}>
             Update
           </Button>
         </Card.Body>

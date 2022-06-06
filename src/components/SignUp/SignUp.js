@@ -75,7 +75,7 @@ const SignUp = () => {
         />
 
         <input
-          className="btn-primary btn-lg d-block mx-auto mb-3"
+          className="btn-dark btn btn-lg d-block mx-auto mb-3"
           type="submit"
           value="Register"
         />

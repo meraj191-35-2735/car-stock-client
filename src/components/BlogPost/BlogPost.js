@@ -12,7 +12,7 @@ const BlogPost = () => {
         Latest <span className="text-danger">Blog Post</span>
       </h3>
       <div className="d-flex">
-        <Card className="mx-3">
+        <Card style={{ backgroundColor: "#f5f5f5" }} className="mx-3">
           <Card.Img variant="top" src={blogImage1} />
           <div className="d-flex justify-content-center">
             <img
@@ -33,7 +33,7 @@ const BlogPost = () => {
             </Card.Text>
           </Card.Body>
         </Card>
-        <Card className="mx-3">
+        <Card style={{ backgroundColor: "#f5f5f5" }} className="mx-3">
           <Card.Img variant="top" src={blogImage2} />
           <div className="d-flex justify-content-center">
             <img
@@ -52,7 +52,7 @@ const BlogPost = () => {
             </Card.Text>
           </Card.Body>
         </Card>
-        <Card className="mx-3">
+        <Card style={{ backgroundColor: "#f5f5f5" }} className="mx-3">
           <Card.Img variant="top" src={blogImage3} />
           <div className="d-flex justify-content-center">
             <img

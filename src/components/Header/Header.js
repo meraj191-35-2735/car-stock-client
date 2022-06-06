@@ -14,14 +14,22 @@ const Header = () => {
   };
   return (
     <>
-      <Navbar bg="white">
+      <Navbar bg="dark">
         <Container className="d-flex justify-content-between">
           <div>
             <Nav className="me-auto">
-              <Nav.Link className="nav-links  fw-bold" as={Link} to="/">
+              <Nav.Link
+                className="nav-links  fw-bold text-white"
+                as={Link}
+                to="/"
+              >
                 Home
               </Nav.Link>
-              <Nav.Link className="nav-links fw-bold" as={Link} to="/blogs">
+              <Nav.Link
+                className="nav-links fw-bold text-white"
+                as={Link}
+                to="/blogs"
+              >
                 Blogs
               </Nav.Link>
             </Nav>
@@ -30,21 +38,21 @@ const Header = () => {
             {user ? (
               <div className="d-flex">
                 <Nav.Link
-                  className="nav-links mx-2 mt-auto"
+                  className="nav-links mx-2 mb-2 fw-bold mt-auto text-white"
                   as={Link}
                   to="/manage_inventory"
                 >
                   Manage Items
                 </Nav.Link>
                 <Nav.Link
-                  className="nav-links mx-2 mt-auto"
+                  className="nav-links mx-2 mb-2 mt-auto fw-bold nav-links text-white"
                   as={Link}
                   to="/add_product"
                 >
                   Add Product
                 </Nav.Link>
                 <button
-                  className="btn btn-link pt-1 text-dark text-decoration-none"
+                  className="btn btn-link  text-dark text-decoration-none text-white nav-links fw-bold"
                   onClick={handleSignOut}
                 >
                   Sign Out
@@ -52,7 +60,11 @@ const Header = () => {
               </div>
             ) : (
               <div>
-                <Nav.Link as={Link} to="login">
+                <Nav.Link
+                  as={Link}
+                  className="nav-links fw-bold text-white"
+                  to="/login"
+                >
                   Login
                 </Nav.Link>
               </div>
