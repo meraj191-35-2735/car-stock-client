@@ -8,7 +8,7 @@ const AddProduct = () => {
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    const url = "https://enigmatic-sands-33985.herokuapp.com/cars";
+    const url = "https://car-stock-server.onrender.com/cars";
     fetch(url, {
       method: "POST",
       headers: {

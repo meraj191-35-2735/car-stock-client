@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ManageInventory = () => {
   const [cars, setCars] = useState([]);
   useEffect(() => {
-    fetch("https://enigmatic-sands-33985.herokuapp.com/cars")
+    fetch("https://car-stock-server.onrender.com/cars")
       .then((res) => res.json())
       .then((data) => setCars(data));
   });
@@ -13,7 +13,7 @@ const ManageInventory = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `https://enigmatic-sands-33985.herokuapp.com/cars/${id}`;
+      const url = `https://car-stock-server.onrender.com/cars/${id}`;
       fetch(url, {
         method: "DELETE",
       })

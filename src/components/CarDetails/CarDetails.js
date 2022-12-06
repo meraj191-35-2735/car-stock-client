@@ -10,7 +10,7 @@ const CarDetails = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const url = `https://enigmatic-sands-33985.herokuapp.com/cars/${carId}`;
+    const url = `https://car-stock-server.onrender.com/cars/${carId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setFindCar(data));
@@ -21,7 +21,7 @@ const CarDetails = () => {
     const inputQuantity = parseInt(inputQuantityText);
     const updatedQuantity = inputQuantity + findCar.quantity;
     findCar.quantity = updatedQuantity;
-    const url = `https://enigmatic-sands-33985.herokuapp.com/cars/${findCar._id}`;
+    const url = `https://car-stock-server.onrender.com/cars/${findCar._id}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -41,7 +41,7 @@ const CarDetails = () => {
   const handleNavigateDeliver = (car) => {
     const remainingQuantity = car.quantity - 1;
     findCar.quantity = remainingQuantity;
-    const url = `https://enigmatic-sands-33985.herokuapp.com/cars/${car._id}`;
+    const url = `https://car-stock-server.onrender.com/cars/${car._id}`;
     fetch(url, {
       method: "PUT",
       headers: {
